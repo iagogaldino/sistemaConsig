@@ -1,0 +1,19 @@
+.g {
+    display: grid;
+    grid-template-columns: 1fr;
+    background: rgb(248, 248, 246);
+    align-items: center;
+    text-align: center;
+    justify-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.c {
+    display: grid;
+    width: 50%;
+}
+
+.form1 {
+    width: 100%;
+}

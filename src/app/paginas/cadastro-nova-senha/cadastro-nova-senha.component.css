@@ -1,0 +1,15 @@
+.g {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* background: gold; */
+    height: 90vh;
+    align-items: center;
+    text-align: center;
+    justify-items: center;
+    ;
+}
+
+.c {
+    width: 20%;
+    display: grid;
+}
