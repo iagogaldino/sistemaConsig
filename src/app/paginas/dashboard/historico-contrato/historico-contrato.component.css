@@ -1,0 +1,10 @@
+.inicial {
+    display: grid;
+    background-color: white;
+    padding: 10px;
+}
+
+.titulo {
+    margin-bottom: 30px;
+    justify-self: center;
+}

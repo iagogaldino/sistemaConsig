@@ -1,0 +1,27 @@
+.inicial {
+    padding: 10px;
+    background-color: white;
+    text-align: center;
+}
+
+.caixa {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.dados {
+    background: white;
+    padding: 5px;
+    border: 1px solid black;
+    margin-top: 10px;
+}
+
+table {
+    margin-top: 30px;
+    width: 100%;
+}
+
+button {
+    margin-top: 10px;
+}

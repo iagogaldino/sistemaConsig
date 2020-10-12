@@ -1,0 +1,47 @@
+<div class="t">
+    <mat-card>
+        <div>Saldo diponível</div>
+        <div>R$0,00</div>
+    </mat-card>
+
+    <mat-card>
+        <div>Saldo cartão</div>
+        <div>R$0,00</div>
+    </mat-card>
+
+    <mat-card>
+        <div>Total de contratos</div>
+        <div>R$0,00</div>
+    </mat-card>
+
+</div>
+
+<div class="graf">
+    <div>
+        <div class="chart">
+            <canvas baseChart [data]="pieChartData" [labels]="pieChartLabels" [chartType]="pieChartType" [plugins]="pieChartPlugins" [colors]="pieChartColors" [legend]="pieChartLegend">
+      </canvas>
+        </div>
+    </div>
+    <div style="padding-right: 20px;">
+
+        <div style="display: block">
+            <canvas baseChart [datasets]="barChartData" [labels]="barChartLabels" [legend]="barChartLegend" [chartType]="barChartType">
+</canvas>
+        </div>
+
+    </div>
+</div>
+
+<div class="guin">
+
+    <div class="area-canlendario">
+        <img style="width: 100%;" src="../../../../assets/imagens/calendario.png" alt="">
+    </div>
+
+    <div class="caixa-msgs">
+        <div><b>Mensagens</b></div>
+        <div>- Feriado de finados</div>
+        <div>- Seu contrato n XXXXXXXX com o XXXX acaba este mês</div>
+    </div>
+</div>

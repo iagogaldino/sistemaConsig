@@ -1,0 +1,20 @@
+.t {
+    height: 73px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    margin-top: 5px;
+    padding: 18px;
+}
+
+.graf {
+    width: 100%;
+    background: white;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding-top: 30px;
+}
+
+.caixa-msgs {
+    margin-top: 10px;
+}

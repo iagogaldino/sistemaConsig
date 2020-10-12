@@ -1,0 +1,81 @@
+<div>
+    <h3>Dados do contrato</h3>
+
+</div>
+
+<div class="guin">
+
+    <div>
+        <div>Situação:</div>
+        <div>Cet:</div>
+        <div>Data início:</div>
+    </div>
+
+    <div>
+        <div>Valor contratado:</div>
+        <div>Instituição:</div>
+        <div>Data fim:</div>
+    </div>
+
+    <div>
+        <div>Prazo:</div>
+        <div>Saldo restante:</div>
+        <div>Número de parcelas pagas:</div>
+    </div>
+
+    <div>
+        <div>Juros:</div>
+        <div>VPL:</div>
+        <div>Parcelas restantes:</div>
+    </div>
+
+</div>
+
+<div style="margin-top: 20px;">
+    <button class="ia" mat-stroked-button color="warn">Suspender</button>
+    <button class="ia" mat-stroked-button color="warn">Ordem judicial</button>
+    <button class="ia" mat-stroked-button color="warn">Liquidar parcelas</button>
+    <button class="ia" mat-stroked-button color="warn">Liquidar parcelas</button>
+    <button class="ia" mat-stroked-button color="warn">Realocar contrato</button>
+    <button class="ia" mat-stroked-button color="warn">Reinanciar</button>
+    <button class="ia" mat-stroked-button color="warn">Refinanciar</button>
+    <button class="ia" mat-stroked-button color="warn">Cancelar</button>
+    <button class="ia" mat-stroked-button color="warn">Bloquear</button>
+</div>
+
+<div>
+
+    <table mat-table [dataSource]="dataSource">
+
+        <ng-container matColumnDef="c1">
+            <th mat-header-cell *matHeaderCellDef> Número de parcelas </th>
+            <td mat-cell *matCellDef="let element"> {{element.numero_parcelas}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="c2">
+            <th mat-header-cell *matHeaderCellDef> Competência </th>
+            <td mat-cell *matCellDef="let element"> {{element.competencia}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="c3">
+            <th mat-header-cell *matHeaderCellDef> Valor </th>
+            <td mat-cell *matCellDef="let element"> {{element.valor }} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="c4">
+            <th mat-header-cell *matHeaderCellDef> Valor pago </th>
+            <td mat-cell *matCellDef="let element"> {{element.valor_pago }} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="c5">
+            <th mat-header-cell *matHeaderCellDef> Situação </th>
+            <td mat-cell *matCellDef="let element"> {{element.situacao}} </td>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+
+
+
+</div>

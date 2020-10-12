@@ -1,20 +1,36 @@
-<mat-toolbar>
-    <span>Dashboard</span>
-</mat-toolbar>
+<mat-sidenav-container class="sidenav-container">
+    <mat-sidenav #drawer class="sidenav" fixedInViewport mode="side" [opened]="true" style="width: 230px;">
 
-<mat-drawer-container class="example-container" autosize>
-    <mat-drawer #drawer class="example-sidenav" mode="side">
-        <p>Auto-resizing sidenav</p>
-        <p *ngIf="showFiller">Lorem, ipsum dolor sit amet consectetur.</p>
-        <button (click)="showFiller = !showFiller" mat-raised-button>
-      Toggle extra text
+        <mat-toolbar style="background-color: 36A0E1; color: #36a0e1;">Menu</mat-toolbar>
+
+        <button mat-button style="display: none;" (click)="drawer.toggle()" id="btnav">sidenav.toggle()</button>
+
+        <mat-nav-list>
+
+            <button class="bt" mat-button color="primary" [routerLink]="['./meu-perfil']"> <mat-icon>home</mat-icon> Meu perfil </button>
+            <button class="bt" mat-button color="primary" [routerLink]="['./simulacao']" routerLinkActive="router-link-active">  <mat-icon>list</mat-icon> Simulação</button>
+            <button class="bt" mat-button color="primary" [routerLink]="['historico-contrato']">  <mat-icon>list</mat-icon> Histórico contratos</button>
+            <button class="bt" mat-button color="primary" [routerLink]="['consignataria']">  <mat-icon>list</mat-icon> Consignatárias</button>
+            <button class="bt" mat-button color="primary" [routerLink]="['']">Sair</button>
+
+        </mat-nav-list>
+    </mat-sidenav>
+
+    <mat-sidenav-content>
+
+
+        <mat-toolbar color="primary">
+            <button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="drawer.toggle()">
+      <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
     </button>
-    </mat-drawer>
+            <span>
+      <div>Dashboard servidor</div>
+    </span>
 
-    <div class="example-sidenav-content">
-        <button type="button" mat-button (click)="drawer.toggle()">
-      Toggle sidenav
-    </button>
-    </div>
 
-</mat-drawer-container>
+
+        </mat-toolbar>
+        <!-- Add Content Here -->
+        <router-outlet></router-outlet>
+    </mat-sidenav-content>
+</mat-sidenav-container>

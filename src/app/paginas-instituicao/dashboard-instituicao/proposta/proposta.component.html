@@ -1,0 +1,124 @@
+<app-caixa-dados></app-caixa-dados>
+<div style="margin-left: 10px;margin-top: 20px;">Dados do Contrato</div>
+<div style="margin: 10px; margin-top: 2px;">
+    <div class="inicial">
+        <div class="dados">
+
+
+            <div class="caixa">
+                <div>
+                    <div>Situação:</div>
+                    <p></p>
+                    <div>CET:</div>
+                    <p></p>
+                    <div>Data Inicio:</div>
+                </div>
+
+                <div>
+                    <div>Valor Contratado:</div>
+                    <p></p>
+                    <div>Instituição:</div>
+                    <p></p>
+                    <div>Data Fim:</div>
+                </div>
+
+                <div>
+                    <div>Prazo:</div>
+                    <p></p>
+                    <div>Saldo Restante:</div>
+                    <p></p>
+                    <div>Nº Parcelas pagas:</div>
+                </div>
+
+                <div>
+                    <div>Juros A.M:</div>
+                    <p></p>
+                    <div>VPL:</div>
+                    <p></p>
+                    <div>Parcelas Restantes:</div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<div class="c1">
+
+    <div class="itemc">
+        <div>Identificador</div>
+        <div> --- </div>
+    </div>
+
+    <div class="itemc">
+        <div> Prazo </div>
+        <div> --- </div>
+    </div>
+
+    <div class="itemc">
+        <div> Valor parcela </div>
+        <div>
+            <mat-form-field>
+                <mat-label> Valor </mat-label>
+                <input matInput placeholder="R$0,00">
+            </mat-form-field>
+        </div>
+    </div>
+
+    <div class="itemc">
+        <div> Valor financiado </div>
+        <div> R$0,00 </div>
+    </div>
+
+    <div class="itemc">
+        <div> Valor consiginado </div>
+        <div> R$0,00 </div>
+    </div>
+
+    <div class="itemc">
+        <div> Juros </div>
+        <div>
+            <mat-form-field>
+                <mat-label> Valor </mat-label>
+                <input matInput placeholder="R$0,00">
+            </mat-form-field>
+        </div>
+    </div>
+
+    <div class="itemc">
+        <div> CET(%) </div>
+        <div> --- </div>
+    </div>
+
+    <div class="itemc">
+        <div> 1 Desconto em folha </div>
+        <div>
+            ---
+        </div>
+    </div>
+
+    <div class="itemc">
+        <div> Último desconto em folha </div>
+        <div> --- </div>
+    </div>
+
+    <div class="itemc">
+        <div> Observação </div>
+        <div> --- </div>
+    </div>
+
+    <div class="itemc">
+        <div> Campo obrigatório </div>
+        <div> --- </div>
+    </div>
+
+</div>
+
+
+<div style="padding: 10px; text-align: center;">
+    <button mat-raised-button color="warn" [routerLink]="['/dashboard-instituicao/resumo-proposta']"> Pedir portabilidade </button>
+</div>

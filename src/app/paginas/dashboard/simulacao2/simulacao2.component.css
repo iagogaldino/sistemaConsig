@@ -1,0 +1,11 @@
+.inicial {
+    display: grid;
+    grid-template-columns: 98%;
+    background-color: white;
+    padding: 15px;
+    gap: 15px;
+}
+
+table {
+    width: 100%;
+}

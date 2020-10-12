@@ -1,0 +1,32 @@
+.inicial {
+    background-color: aliceblue;
+    height: 100%;
+}
+
+.caixa {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.dados {
+    background: whitesmoke;
+    padding: 5px;
+    border: 1px solid #e8dfdf;
+    margin-top: 10px;
+    font-size: 11px;
+}
+
+table {
+    width: 100%;
+}
+
+.itemc {
+    background-color: #f3f3f34a;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    border-bottom: 1px solid #e8e8e8;
+    padding-left: 15px;
+    align-items: center;
+}

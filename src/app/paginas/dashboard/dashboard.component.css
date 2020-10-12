@@ -1,0 +1,21 @@
+.c {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    height: 90.6vh;
+}
+
+.col1 {
+    background: #dedede;
+}
+
+.col2 {}
+
+.bt {
+    width: 100%;
+    text-align: left;
+}
+
+.load-pages {
+    background-color: rgb(226, 223, 223);
+    overflow: auto;
+}

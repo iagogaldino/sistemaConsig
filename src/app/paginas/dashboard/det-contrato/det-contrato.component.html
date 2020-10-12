@@ -1,0 +1,85 @@
+<div class="inicial">
+
+    <h2 style="text-align: center;">Detalhamento</h2>
+
+    <div class="dados">
+
+        <h3>Dados do Contrato</h3>
+
+        <div class="caixa">
+            <div>
+                <div>Situação:</div>
+                <p></p>
+                <div>CET:</div>
+                <p></p>
+                <div>Data Inicio:</div>
+            </div>
+
+            <div>
+                <div>Valor Contratado:</div>
+                <p></p>
+                <div>Instituição:</div>
+                <p></p>
+                <div>Data Fim:</div>
+            </div>
+
+            <div>
+                <div>Prazo:</div>
+                <p></p>
+                <div>Saldo Restante:</div>
+                <p></p>
+                <div>Nº Parcelas pagas:</div>
+            </div>
+
+            <div>
+                <div>Juros A.M:</div>
+                <p></p>
+                <div>VPL:</div>
+                <p></p>
+                <div>Parcelas Restantes:</div>
+            </div>
+        </div>
+
+    </div>
+
+    <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+        <ng-container matColumnDef="n_parcela">
+            <th mat-header-cell *matHeaderCellDef> Número de parcela </th>
+            <td mat-cell *matCellDef="let element"> {{element.n_parcela}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="competencia">
+            <th mat-header-cell *matHeaderCellDef> Competência </th>
+            <td mat-cell *matCellDef="let element"> {{element.competencia}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="valor">
+            <th mat-header-cell *matHeaderCellDef> Valor </th>
+            <td mat-cell *matCellDef="let element"> {{element.valor}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="valor_pago">
+            <th mat-header-cell *matHeaderCellDef> Valor pago </th>
+            <td mat-cell *matCellDef="let element">
+                {{element.valor_pago}}
+            </td>
+        </ng-container>
+
+        <ng-container matColumnDef="situacao">
+            <th mat-header-cell *matHeaderCellDef> Situação </th>
+            <td mat-cell *matCellDef="let element">
+                {{element.situacao}}
+            </td>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+
+
+    <button mat-raised-button [routerLink]="['/dashboard/historico-contrato']">Voltar</button>
+
+
+
+</div>

@@ -1,0 +1,23 @@
+.g {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    height: 89.6vh;
+}
+
+.col1 {
+    background-color: #f1f1f1;
+    text-align: center;
+}
+
+.col2 {
+    padding: 10px;
+}
+
+.button {
+    width: 100%;
+    margin-top: 5px;
+}
+
+mat-list-item {
+    font-size: 11px;
+}

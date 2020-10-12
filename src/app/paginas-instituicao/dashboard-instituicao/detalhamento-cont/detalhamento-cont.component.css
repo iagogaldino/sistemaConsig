@@ -1,0 +1,28 @@
+.inicial {
+    background-color: aliceblue;
+    height: 100%;
+}
+
+.caixa {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.dados {
+    background: white;
+    padding: 5px;
+    border: 1px solid black;
+    margin-top: 10px;
+}
+
+table {
+    width: 100%;
+}
+
+.a-bts {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    gap: 5px;
+}

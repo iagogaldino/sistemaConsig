@@ -1,0 +1,46 @@
+<div class="simulacao-inicio">
+    <mat-card>Valor da Parcela</mat-card>
+
+    <div>
+        <mat-form-field class="example-full-width">
+            <mat-label>MARGEM CONSIGNAVEL</mat-label>
+            <input matInput>
+        </mat-form-field>
+    </div>
+
+    <div>
+        <mat-form-field appearance="fill">
+            <mat-label>PARCELAS</mat-label>
+            <mat-select>
+                <mat-option>
+                    OPCAO 1
+                </mat-option>
+            </mat-select>
+        </mat-form-field>
+    </div>
+
+    <button mat-raised-button color="primary" [routerLink]="['/dashboard/simulacao-dois']">SIMULAR (Tela destino?)</button>
+
+    <mat-card>Valor do Empréstimo</mat-card>
+
+    <div>
+        <mat-form-field class="example-full-width">
+            <mat-label>VALOR DESEJADO</mat-label>
+            <input matInput>
+        </mat-form-field>
+    </div>
+
+    <div>
+        <mat-form-field appearance="fill">
+            <mat-label>PARCELAS</mat-label>
+            <mat-select>
+                <mat-option>
+                    OPCAO 1
+                </mat-option>
+            </mat-select>
+        </mat-form-field>
+    </div>
+
+    <button mat-raised-button color="primary" [routerLink]="['/dashboard/simulacao-dois']">SIMULAR</button>
+
+</div>

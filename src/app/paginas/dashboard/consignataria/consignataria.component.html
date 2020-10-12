@@ -1,0 +1,76 @@
+<mat-toolbar>
+    <span>Consignatárias</span>
+</mat-toolbar>
+
+<div class="inicial">
+
+    <div class="filtros">
+        <div>
+            <mat-form-field class="example-full-width">
+                <mat-label>Instituição</mat-label>
+                <input matInput>
+            </mat-form-field>
+            <button mat-icon-button color="accent">
+      <mat-icon>search</mat-icon>
+    </button>
+        </div>
+
+
+        <div>
+            <mat-form-field class="example-full-width">
+                <mat-label>Cidade</mat-label>
+                <input matInput>
+            </mat-form-field>
+            <button mat-icon-button color="accent">
+      <mat-icon>search</mat-icon>
+    </button>
+        </div>
+
+        <div>
+            <mat-form-field class="example-full-width">
+                <mat-label>UF</mat-label>
+                <input matInput>
+            </mat-form-field>
+
+            <button mat-icon-button color="accent">
+      <mat-icon>search</mat-icon>
+    </button>
+        </div>
+
+    </div>
+
+    <table mat-table [dataSource]="dataSource">
+
+        <ng-container matColumnDef="instituicao">
+            <th mat-header-cell *matHeaderCellDef> Instituição </th>
+            <td mat-cell *matCellDef="let element"> {{element.instituicao}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="telefone">
+            <th mat-header-cell *matHeaderCellDef> Telefone
+                <td mat-cell *matCellDef="let element"> {{element.telefone}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="cidade">
+            <th mat-header-cell *matHeaderCellDef> Cidade </th>
+            <td mat-cell *matCellDef="let element"> {{element.cidade}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="uf">
+            <th mat-header-cell *matHeaderCellDef> UF </th>
+            <td mat-cell *matCellDef="let element"> {{element.uf}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="endereco">
+            <th mat-header-cell *matHeaderCellDef> Endereço </th>
+            <td mat-cell *matCellDef="let element"> {{element.endereco}} </td>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+
+    <div style="text-align: center; margin-top: 10%;">
+        <button mat-raised-button color="accent">Imprimir</button>
+    </div>
+</div>

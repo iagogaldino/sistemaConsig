@@ -1,0 +1,14 @@
+table {
+    width: 100%;
+}
+
+.guin {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    background: #f1f1f1;
+    padding-bottom: 13px;
+    padding-top: 7px;
+    padding-left: 2px;
+    font-size: 10px;
+    border: 1px solid #e0d9d9;
+}

@@ -1,0 +1,107 @@
+<div style="padding: 10px;">
+
+
+    <app-caixa-dados></app-caixa-dados>
+
+
+    <div style="padding: 10px;">
+        <mat-form-field appearance="fill">
+            <mat-label> Selecionar ID </mat-label>
+            <mat-select>
+                <mat-option>
+                    Item
+                </mat-option>
+            </mat-select>
+        </mat-form-field>
+    </div>
+
+    <div class="c1">
+
+        <div class="itemc">
+            <div>Margem disponível para operação</div>
+            <div> R$0,00 </div>
+        </div>
+
+        <div class="itemc">
+            <div> Identificador </div>
+            <div> R$0,00 </div>
+        </div>
+
+        <div class="itemc">
+            <div> Prazo </div>
+            <div>
+                <mat-form-field>
+                    <mat-label> Valor </mat-label>
+                    <input matInput placeholder="R$0,00">
+                </mat-form-field>
+            </div>
+        </div>
+
+        <div class="itemc">
+            <div> Valor parcela </div>
+            <div> R$0,00 </div>
+        </div>
+
+        <div class="itemc">
+            <div> Valor financiado </div>
+            <div> R$0,00 </div>
+        </div>
+
+        <div class="itemc">
+            <div> Valor consiginado </div>
+            <div> R$0,00 </div>
+        </div>
+
+        <div class="itemc">
+            <div> Juros </div>
+            <div>
+                <mat-form-field>
+                    <mat-label> Valor </mat-label>
+                    <input matInput placeholder="R$0,00">
+                </mat-form-field>
+            </div>
+        </div>
+
+        <div class="itemc">
+            <div> CET(%) </div>
+            <div> R$0,00 </div>
+        </div>
+
+        <div class="itemc">
+            <div> 1 Desconto em folha </div>
+            <div>
+
+                <mat-form-field appearance="fill">
+                    <mat-label>Lista de seleção</mat-label>
+                    <mat-select>
+                        <mat-option>
+                            Item
+                        </mat-option>
+                    </mat-select>
+                </mat-form-field>
+
+            </div>
+        </div>
+
+        <div class="itemc">
+            <div> Último desconto em folha </div>
+            <div> R$0,00 </div>
+        </div>
+
+        <div class="itemc">
+            <div> Observação </div>
+            <div> R$0,00 </div>
+        </div>
+
+        <div class="itemc">
+            <div> Campo obrigatório </div>
+            <div> R$0,00 </div>
+        </div>
+
+    </div>
+
+
+    <div style="text-align: center; padding: 10px;">
+        <button mat-raised-button color="primary" [routerLink]="'/dashboard-instituicao/resumo-contrato'">Resumo</button>
+    </div>
+</div>
