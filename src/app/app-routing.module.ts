@@ -1,3 +1,9 @@
+import { MeuPerfilGestaoComponent } from './paginas-orgao/meu-perfil-gestao/meu-perfil-gestao.component';
+import { AverbacaoGestaoComponent } from './paginas-orgao/averbacao-gestao/averbacao-gestao.component';
+import { UsuariosGestaoComponent } from './paginas-orgao/usuarios-gestao/usuarios-gestao.component';
+import { PaginaInicialOrgaoComponent } from './paginas-orgao/pagina-inicial-orgao/pagina-inicial-orgao.component';
+import { RefinanciarResumoComponent } from './paginas-instituicao/dashboard-instituicao/refinanciar-resumo/refinanciar-resumo.component';
+import { RefinanciarComponent } from './paginas-instituicao/dashboard-instituicao/refinanciar/refinanciar.component';
 import { PropostaResumoComponent } from './paginas-instituicao/dashboard-instituicao/proposta-resumo/proposta-resumo.component';
 // tslint:disable-next-line: max-line-length
 import { PesquisaPorContratoComponent } from './paginas-instituicao/dashboard-instituicao/pesquisa-por-contrato/pesquisa-por-contrato.component';
@@ -30,6 +36,12 @@ import { AverbarNovoContratoComponent } from './paginas-instituicao/dashboard-in
 import { ContratoComponent } from './paginas-instituicao/dashboard-instituicao/averbacoes/contrato.component';
 import { DetalhamentoContComponent } from './paginas-instituicao/dashboard-instituicao/detalhamento-cont/detalhamento-cont.component';
 import { ConsignatariaComponent } from './paginas/dashboard/consignataria/consignataria.component';
+import { DashboardOrgaoComponent } from './paginas-orgao/dashboard-orgao/dashboard-orgao.component';
+import { DescontoEmFolhaInstituicaoComponent } from './paginas-instituicao/dashboard-instituicao/desconto-em-folha-instituicao/desconto-em-folha-instituicao.component';
+import { DatalhesAverbacaoOrgaoComponent } from './paginas-orgao/datalhes-averbacao-orgao/datalhes-averbacao-orgao.component';
+import { MovimentacoesInstituicaoComponent } from './paginas-instituicao/dashboard-instituicao/movimentacoes-instituicao/movimentacoes-instituicao.component';
+import { DetalhamentoContratoOrgaoComponent } from './paginas-orgao/detalhamento-contrato-orgao/detalhamento-contrato-orgao.component';
+
 
 
 const routes: Routes = [
@@ -49,6 +61,7 @@ const routes: Routes = [
     { path: 'historico-contrato', component: HistoricoContratoComponent },
     { path: 'detalhamento-contrato', component: DetContratoComponent },
     { path: 'consignataria', component: ConsignatariaComponent },
+    { path: 'movimentacoes-instituicao', component: MovimentacoesInstituicaoComponent },
 
   ] },
   /* Rotas de usuarios comuns */
@@ -75,7 +88,27 @@ const routes: Routes = [
     { path: 'proposta', component: PropostaComponent },
     { path: 'pesquisa-contrato', component: PesquisaPorContratoComponent },
     { path: 'postos-atendimento', component: PotosAtendimentoComponent },
+    { path: 'refinanciar', component: RefinanciarComponent },
+    { path: 'refinanciar-resumo', component: RefinanciarResumoComponent },
+    { path: 'desconto-em-folha-instituicao', component: DescontoEmFolhaInstituicaoComponent },
+    { path: 'movimentacoes-instituicao', component: MovimentacoesInstituicaoComponent },
+  ] },
+  /* Rotas instituição */
 
+
+
+
+
+
+  /* Rotas instituição */
+  { path: 'dashboard-orgao', component: DashboardOrgaoComponent, children: [
+    { path: '', component: PaginaInicialOrgaoComponent },
+    { path: 'usuarios', component: UsuariosGestaoComponent },
+    { path: 'portabilidades', component: PortabilidadeComponent },
+    { path: 'averbacoes', component: AverbacaoGestaoComponent },
+    { path: 'detalhes-averbacoes', component: DatalhesAverbacaoOrgaoComponent },
+    { path: 'meuperfil', component: MeuPerfilGestaoComponent },
+    { path: 'detalhamento-contrato', component: DetalhamentoContratoOrgaoComponent },
   ] },
   /* Rotas instituição */
 

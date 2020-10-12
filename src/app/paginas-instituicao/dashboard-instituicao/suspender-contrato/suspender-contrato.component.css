@@ -1,0 +1,17 @@
+mat-form-field {
+    width: 100%;
+}
+
+.b2 {
+    margin-left: 5px;
+}
+
+.g {
+    display: grid;
+    text-align: center;
+}
+
+.gg {
+    font-size: 20px;
+    margin-bottom: 42px;
+}

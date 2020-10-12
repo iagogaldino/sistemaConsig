@@ -4,55 +4,18 @@
 
 <div style="margin: 10px">
     <div class="inicial">
-        <div class="dados">
 
-            <h3>Dados do Contrato</h3>
-
-            <div class="caixa">
-                <div>
-                    <div>Situação:</div>
-                    <p></p>
-                    <div>CET:</div>
-                    <p></p>
-                    <div>Data Inicio:</div>
-                </div>
-
-                <div>
-                    <div>Valor Contratado:</div>
-                    <p></p>
-                    <div>Instituição:</div>
-                    <p></p>
-                    <div>Data Fim:</div>
-                </div>
-
-                <div>
-                    <div>Prazo:</div>
-                    <p></p>
-                    <div>Saldo Restante:</div>
-                    <p></p>
-                    <div>Nº Parcelas pagas:</div>
-                </div>
-
-                <div>
-                    <div>Juros A.M:</div>
-                    <p></p>
-                    <div>VPL:</div>
-                    <p></p>
-                    <div>Parcelas Restantes:</div>
-                </div>
-            </div>
-
-        </div>
+        <app-dados-contrato></app-dados-contrato>
 
         <div class="a-bts">
-            <button mat-stroked-button color="accent" (click)="supenderCont()">Suspender</button>
-            <button mat-stroked-button color="accent">Reianciar</button>
-            <button mat-stroked-button color="accent">Ordem judicial</button>
-            <button mat-stroked-button color="accent">Refinanciar</button>
-            <button mat-stroked-button color="accent">Liquidar parcelas</button>
-            <button mat-stroked-button color="accent">Cancelar</button>
-            <button mat-stroked-button color="accent">Realocar cotrato</button>
-            <button mat-stroked-button color="accent">Bloquear</button>
+            <button mat-stroked-button (click)="supenderCont()">Suspender</button>
+            <button mat-stroked-button>Reianciar</button>
+            <button mat-stroked-button (click)="ordemJud()">Ordem judicial</button>
+            <button mat-stroked-button [routerLink]="'/dashboard-instituicao/refinanciar'">Refinanciar</button>
+            <button mat-stroked-button (click)="liquidar()">Liquidar parcelas</button>
+            <button mat-stroked-button (click)="cancelarContrato()">Cancelar</button>
+            <button mat-stroked-button>Realocar cotrato</button>
+            <button mat-stroked-button>Bloquear</button>
         </div>
 
         <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">

@@ -1,0 +1,11 @@
+table {
+    width: 100%;
+}
+
+.a-bts {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    gap: 5px;
+}

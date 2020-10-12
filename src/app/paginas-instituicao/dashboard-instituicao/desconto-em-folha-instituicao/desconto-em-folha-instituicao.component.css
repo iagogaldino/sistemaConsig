@@ -1,0 +1,15 @@
+.sec {
+    justify-items: center;
+    gap: 30px;
+    margin-top: 30px;
+    padding: 10px;
+    display: flex;
+}
+
+.exports {
+    margin-left: 40%;
+}
+
+table {
+    width: 100%;
+}

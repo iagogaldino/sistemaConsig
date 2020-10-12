@@ -52,6 +52,27 @@ import { PropostaResumoComponent } from './paginas-instituicao/dashboard-institu
 import { SuspenderContratoComponent } from './paginas-instituicao/dashboard-instituicao/suspender-contrato/suspender-contrato.component';
 import { ConsignatariaComponent } from './paginas/dashboard/consignataria/consignataria.component';
 import { ChartsModule } from 'ng2-charts';
+import { OrdemJudicialComponent } from './paginas-instituicao/dashboard-instituicao/ordem-judicial/ordem-judicial.component';
+import { CancelarContratoComponent } from './paginas-instituicao/dashboard-instituicao/cancelar-contrato/cancelar-contrato.component';
+import { LiquidarComponent } from './paginas-instituicao/dashboard-instituicao/liquidar/liquidar.component';
+import { RefinanciarComponent } from './paginas-instituicao/dashboard-instituicao/refinanciar/refinanciar.component';
+import { DadosContratoComponent } from './paginas-instituicao/componentes/dados-contrato/dados-contrato.component';
+import { BoxDetalhamentoComponent } from './paginas-instituicao/componentes/box-detalhamento/box-detalhamento.component';
+import { RefinanciarResumoComponent } from './paginas-instituicao/dashboard-instituicao/refinanciar-resumo/refinanciar-resumo.component';
+import { BoxDadosAverbServidorComponent } from './paginas-instituicao/componentes/box-dados-averb-servidor/box-dados-averb-servidor.component';
+import { DashboardOrgaoComponent } from './paginas-orgao/dashboard-orgao/dashboard-orgao.component';
+import { PaginaInicialOrgaoComponent } from './paginas-orgao/pagina-inicial-orgao/pagina-inicial-orgao.component';
+import { PortabilidadesComponent } from './paginas-orgao/portabilidades/portabilidades.component';
+import { MeuPerfilGestaoComponent } from './paginas-orgao/meu-perfil-gestao/meu-perfil-gestao.component';
+import { UsuariosGestaoComponent } from './paginas-orgao/usuarios-gestao/usuarios-gestao.component';
+import {MatChipsModule} from '@angular/material/chips';
+import { AverbacaoGestaoComponent } from './paginas-orgao/averbacao-gestao/averbacao-gestao.component';
+import { DescontoEmFolhaInstituicaoComponent } from './paginas-instituicao/dashboard-instituicao/desconto-em-folha-instituicao/desconto-em-folha-instituicao.component';
+import { PerfilOrgaoComponent } from './paginas-orgao/perfil-orgao/perfil-orgao.component';
+import { DatalhesAverbacaoOrgaoComponent } from './paginas-orgao/datalhes-averbacao-orgao/datalhes-averbacao-orgao.component';
+import { MovimentacoesInstituicaoComponent } from './paginas-instituicao/dashboard-instituicao/movimentacoes-instituicao/movimentacoes-instituicao.component';
+import { DetContratoOrgaoComponent } from './paginas-orgao/det-contrato-orgao/det-contrato-orgao.component';
+import { DetalhamentoContratoOrgaoComponent } from './paginas-orgao/detalhamento-contrato-orgao/detalhamento-contrato-orgao.component';
 
 @NgModule({
   declarations: [
@@ -90,6 +111,26 @@ import { ChartsModule } from 'ng2-charts';
     PropostaResumoComponent,
     SuspenderContratoComponent,
     ConsignatariaComponent,
+    OrdemJudicialComponent,
+    CancelarContratoComponent,
+    LiquidarComponent,
+    RefinanciarComponent,
+    DadosContratoComponent,
+    BoxDetalhamentoComponent,
+    RefinanciarResumoComponent,
+    BoxDadosAverbServidorComponent,
+    DashboardOrgaoComponent,
+    PaginaInicialOrgaoComponent,
+    PortabilidadesComponent,
+    MeuPerfilGestaoComponent,
+    UsuariosGestaoComponent,
+    AverbacaoGestaoComponent,
+    DescontoEmFolhaInstituicaoComponent,
+    PerfilOrgaoComponent,
+    DatalhesAverbacaoOrgaoComponent,
+    MovimentacoesInstituicaoComponent,
+    DetContratoOrgaoComponent,
+    DetalhamentoContratoOrgaoComponent,
   ],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA ],
   imports: [
@@ -109,7 +150,8 @@ import { ChartsModule } from 'ng2-charts';
     MatDialogModule,
     MatListModule,
     MatCheckboxModule,
-    ChartsModule
+    ChartsModule,
+    MatChipsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

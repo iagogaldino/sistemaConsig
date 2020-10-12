@@ -1,0 +1,33 @@
+.t {
+    height: 73px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    margin-top: 5px;
+    padding: 20px;
+}
+
+.graf {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.caixa-msgs {
+    margin-top: 10px;
+    margin-left: 10px;
+    background: #FFC107;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.area-canlendario {
+    background-color: red;
+    height: 150px;
+    width: 150px;
+    padding-left: 5px;
+}
+
+.guin {
+    display: flex;
+}

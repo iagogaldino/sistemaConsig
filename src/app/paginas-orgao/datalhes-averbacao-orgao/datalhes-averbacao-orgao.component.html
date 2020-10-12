@@ -1,0 +1,61 @@
+<app-caixa-dados></app-caixa-dados>
+
+<div>
+
+    <button style="margin: 10px;" [routerLink]="['/dashboard-instituicao/averbar-novo-contrato']" mat-stroked-button color="accent">Averbar</button>
+    <button style="margin: 10px;" [routerLink]="['/dashboard-instituicao/averbar-novo-contrato']" mat-stroked-button color="accent">CSV</button>
+
+    <table mat-table [dataSource]="dataSource">
+
+        <ng-container matColumnDef="c1">
+            <th mat-header-cell *matHeaderCellDef> Número contrato </th>
+            <td mat-cell *matCellDef="let element"> {{element.nome}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="c2">
+            <th mat-header-cell *matHeaderCellDef> Instituição </th>
+            <td mat-cell *matCellDef="let element"> {{element.instituicao}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="c3">
+            <th mat-header-cell *matHeaderCellDef> DT Início </th>
+            <td mat-cell *matCellDef="let element"> {{element.dt_inicio}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="c4">
+            <th mat-header-cell *matHeaderCellDef> Valor da parcela </th>
+            <td mat-cell *matCellDef="let element">
+                {{element.valor_parcela}}
+            </td>
+        </ng-container>
+
+        <ng-container matColumnDef="c5">
+            <th mat-header-cell *matHeaderCellDef> Prazo </th>
+            <td mat-cell *matCellDef="let element">
+                {{element.prazo}}
+            </td>
+        </ng-container>
+
+
+        <ng-container matColumnDef="c6">
+            <th mat-header-cell *matHeaderCellDef> Situação </th>
+            <td mat-cell *matCellDef="let element">
+                {{element.situacao}}
+            </td>
+        </ng-container>
+
+        <ng-container matColumnDef="c7">
+            <th mat-header-cell *matHeaderCellDef> Detalhes </th>
+            <td mat-cell *matCellDef="let element">
+
+                <button [routerLink]="['/dashboard-orgao/detalhamento-contrato']" mat-icon-button>
+                <mat-icon>search</mat-icon>
+              </button>
+
+            </td>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+</div>

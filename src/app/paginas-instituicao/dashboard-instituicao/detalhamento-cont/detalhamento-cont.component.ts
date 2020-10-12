@@ -1,3 +1,6 @@
+import { LiquidarComponent } from './../liquidar/liquidar.component';
+import { CancelarContratoComponent } from './../cancelar-contrato/cancelar-contrato.component';
+import { OrdemJudicialComponent } from './../ordem-judicial/ordem-judicial.component';
 import { SuspenderContratoComponent } from './../suspender-contrato/suspender-contrato.component';
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
@@ -27,6 +30,42 @@ export class DetalhamentoContComponent implements OnInit {
 
   supenderCont(): void {
     const dialogRef = this.dialog.open(SuspenderContratoComponent, {
+      width: '250px',
+      data: {}
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+      console.log('The dialog was closed');
+
+    });
+  }
+
+  ordemJud(): void {
+    const dialogRef = this.dialog.open(OrdemJudicialComponent, {
+      width: '250px',
+      data: {}
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+      console.log('The dialog was closed');
+
+    });
+  }
+
+  cancelarContrato(): void {
+    const dialogRef = this.dialog.open(CancelarContratoComponent, {
+      width: '250px',
+      data: {}
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+      console.log('The dialog was closed');
+
+    });
+  }
+
+  liquidar(): void {
+    const dialogRef = this.dialog.open(LiquidarComponent, {
       width: '250px',
       data: {}
     });

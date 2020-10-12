@@ -1,0 +1,14 @@
+.dados {
+    padding: 6px;
+    border: 1px solid #e6e6e6;
+    margin-top: 1px;
+    border-radius: 3px;
+    color: #5d5d5d;
+    background: #f7f7f7;
+    font-size: 11px;
+}
+
+.caixa {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
