@@ -1,3 +1,5 @@
+import { ReservasOrgaoComponent } from './paginas-orgao/reservas-orgao/reservas-orgao.component';
+import { RealocarMargemOrgaoComponent } from './paginas-orgao/realocar-margem-orgao/realocar-margem-orgao.component';
 import { MeuPerfilGestaoComponent } from './paginas-orgao/meu-perfil-gestao/meu-perfil-gestao.component';
 import { AverbacaoGestaoComponent } from './paginas-orgao/averbacao-gestao/averbacao-gestao.component';
 import { UsuariosGestaoComponent } from './paginas-orgao/usuarios-gestao/usuarios-gestao.component';
@@ -41,6 +43,9 @@ import { DescontoEmFolhaInstituicaoComponent } from './paginas-instituicao/dashb
 import { DatalhesAverbacaoOrgaoComponent } from './paginas-orgao/datalhes-averbacao-orgao/datalhes-averbacao-orgao.component';
 import { MovimentacoesInstituicaoComponent } from './paginas-instituicao/dashboard-instituicao/movimentacoes-instituicao/movimentacoes-instituicao.component';
 import { DetalhamentoContratoOrgaoComponent } from './paginas-orgao/detalhamento-contrato-orgao/detalhamento-contrato-orgao.component';
+import { RepasseInstituicaoComponent } from './paginas-instituicao/dashboard-instituicao/repasse-instituicao/repasse-instituicao.component';
+import { AuditoriaInstituicaoComponent } from './paginas-instituicao/dashboard-instituicao/auditoria-instituicao/auditoria-instituicao.component';
+import { PortabilidadeOrgaoComponent } from './paginas-orgao/portabilidade-orgao/portabilidade-orgao.component';
 
 
 
@@ -92,6 +97,8 @@ const routes: Routes = [
     { path: 'refinanciar-resumo', component: RefinanciarResumoComponent },
     { path: 'desconto-em-folha-instituicao', component: DescontoEmFolhaInstituicaoComponent },
     { path: 'movimentacoes-instituicao', component: MovimentacoesInstituicaoComponent },
+    { path: 'repasse-instituicao', component: RepasseInstituicaoComponent },
+    { path: 'auditoria-instituicao', component: AuditoriaInstituicaoComponent },
   ] },
   /* Rotas instituição */
 
@@ -100,17 +107,19 @@ const routes: Routes = [
 
 
 
-  /* Rotas instituição */
+  /* Rotas Orgao */
   { path: 'dashboard-orgao', component: DashboardOrgaoComponent, children: [
     { path: '', component: PaginaInicialOrgaoComponent },
     { path: 'usuarios', component: UsuariosGestaoComponent },
-    { path: 'portabilidades', component: PortabilidadeComponent },
+    { path: 'portabilidade', component: PortabilidadeOrgaoComponent },
     { path: 'averbacoes', component: AverbacaoGestaoComponent },
     { path: 'detalhes-averbacoes', component: DatalhesAverbacaoOrgaoComponent },
     { path: 'meuperfil', component: MeuPerfilGestaoComponent },
     { path: 'detalhamento-contrato', component: DetalhamentoContratoOrgaoComponent },
+    { path: 'realocar-margem', component: RealocarMargemOrgaoComponent },
+    { path: 'reservas', component: ReservasOrgaoComponent },
   ] },
-  /* Rotas instituição */
+  /* Rotas Orgao */
 
 
 ];

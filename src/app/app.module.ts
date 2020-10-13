@@ -73,6 +73,13 @@ import { DatalhesAverbacaoOrgaoComponent } from './paginas-orgao/datalhes-averba
 import { MovimentacoesInstituicaoComponent } from './paginas-instituicao/dashboard-instituicao/movimentacoes-instituicao/movimentacoes-instituicao.component';
 import { DetContratoOrgaoComponent } from './paginas-orgao/det-contrato-orgao/det-contrato-orgao.component';
 import { DetalhamentoContratoOrgaoComponent } from './paginas-orgao/detalhamento-contrato-orgao/detalhamento-contrato-orgao.component';
+import { LogOperacoesComponent } from './paginas-orgao/log-operacoes/log-operacoes.component';
+import { RealocarMargemOrgaoComponent } from './paginas-orgao/realocar-margem-orgao/realocar-margem-orgao.component';
+import { RepasseInstituicaoComponent } from './paginas-instituicao/dashboard-instituicao/repasse-instituicao/repasse-instituicao.component';
+import { AuditoriaInstituicaoComponent } from './paginas-instituicao/dashboard-instituicao/auditoria-instituicao/auditoria-instituicao.component';
+import { PortabilidadeOrgaoComponent } from './paginas-orgao/portabilidade-orgao/portabilidade-orgao.component';
+import { ReservasOrgaoComponent } from './paginas-orgao/reservas-orgao/reservas-orgao.component';
+import { DetalhesReservaOrgaoComponent } from './paginas-orgao/detalhes-reserva-orgao/detalhes-reserva-orgao.component';
 
 @NgModule({
   declarations: [
@@ -131,6 +138,13 @@ import { DetalhamentoContratoOrgaoComponent } from './paginas-orgao/detalhamento
     MovimentacoesInstituicaoComponent,
     DetContratoOrgaoComponent,
     DetalhamentoContratoOrgaoComponent,
+    LogOperacoesComponent,
+    RealocarMargemOrgaoComponent,
+    RepasseInstituicaoComponent,
+    AuditoriaInstituicaoComponent,
+    PortabilidadeOrgaoComponent,
+    ReservasOrgaoComponent,
+    DetalhesReservaOrgaoComponent,
   ],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA ],
   imports: [

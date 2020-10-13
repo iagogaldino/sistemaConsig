@@ -1,3 +1,4 @@
+import { LogOperacoesComponent } from './../log-operacoes/log-operacoes.component';
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 
@@ -22,10 +23,10 @@ export class DetalhamentoContratoOrgaoComponent implements OnInit {
       {n_parcela: '10', competencia: 'xx/xxxx', valor: 10000, valor_pago: 10000, situacao: 'ok'},
     ];
   }
-/*
-  supenderCont(): void {
-    const dialogRef = this.dialog.open(SuspenderContratoComponent, {
-      width: '250px',
+
+  verLog(): void {
+    const dialogRef = this.dialog.open(LogOperacoesComponent, {
+      width: '650px',
       data: {}
     });
 
@@ -34,7 +35,7 @@ export class DetalhamentoContratoOrgaoComponent implements OnInit {
 
     });
   }
-
+/*
   ordemJud(): void {
     const dialogRef = this.dialog.open(OrdemJudicialComponent, {
       width: '250px',
