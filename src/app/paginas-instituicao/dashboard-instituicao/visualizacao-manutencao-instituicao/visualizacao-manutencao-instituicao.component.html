@@ -1,0 +1,58 @@
+<div class="inicial">
+
+    <div style="text-align:center;">
+        <mat-card-title>
+            <span>Perfil</span>
+        </mat-card-title>
+    </div>
+
+    <mat-form-field class="example-full-width">
+        <mat-label>Nome</mat-label>
+        <input matInput placeholder="Ex. João da Silva">
+    </mat-form-field>
+
+    <table mat-table [dataSource]="dataSource">
+        >
+        <ng-container matColumnDef="funcao">
+            <th mat-header-cell *matHeaderCellDef> Função </th>
+            <td mat-cell *matCellDef="let element"> {{element.funcao}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="acessar">
+            <th mat-header-cell *matHeaderCellDef> Acessar </th>
+            <td mat-cell *matCellDef="let element">
+                <mat-checkbox color="primary"></mat-checkbox>
+            </td>
+        </ng-container>
+
+        <ng-container matColumnDef="inserir">
+            <th mat-header-cell *matHeaderCellDef> Inserir </th>
+            <td mat-cell *matCellDef="let element">
+                <mat-checkbox color="primary"></mat-checkbox>
+            </td>
+        </ng-container>
+
+        <ng-container matColumnDef="alterar">
+            <th mat-header-cell *matHeaderCellDef> Alterar </th>
+            <td mat-cell *matCellDef="let element">
+                <mat-checkbox color="primary"></mat-checkbox>
+            </td>
+        </ng-container>
+
+        <ng-container matColumnDef="excluir">
+            <th mat-header-cell *matHeaderCellDef> Excluir </th>
+            <td mat-cell *matCellDef="let element">
+                <mat-checkbox color="primary"></mat-checkbox>
+            </td>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+
+    <div style="text-align: center; margin-top: 15px;">
+        <button mat-raised-button mat-dialog-close>Fechar</button>
+    </div>
+
+
+</div>

@@ -1,0 +1,90 @@
+<mat-toolbar>
+    <span>
+    Desconto em folha
+  </span>
+</mat-toolbar>
+
+<div>
+
+    <mat-form-field appearance="fill">
+        <mat-label> Escolher filtro </mat-label>
+        <mat-select>
+            <mat-option>
+                Op1
+            </mat-option>
+        </mat-select>
+    </mat-form-field>
+
+    <mat-form-field>
+        <mat-label> Filtro </mat-label>
+        <input matInput>
+    </mat-form-field>
+
+    <button mat-icon-button>
+      <mat-icon>search</mat-icon>
+    </button>
+
+    <button mat-stroked-button color="accent">TXT</button>
+    <button mat-stroked-button color="accent">XLS</button>
+    <button mat-stroked-button color="accent">PDF</button>
+
+</div>
+
+<table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+
+    <ng-container matColumnDef="competencia">
+        <th mat-header-cell *matHeaderCellDef> Competência </th>
+        <td mat-cell *matCellDef="let element"> {{element.competencia}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="consignataria">
+        <th mat-header-cell *matHeaderCellDef> Consignatária </th>
+        <td mat-cell *matCellDef="let element"> {{element.consignataria}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="produto">
+        <th mat-header-cell *matHeaderCellDef> Produto </th>
+        <td mat-cell *matCellDef="let element"> {{element.Produto}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="id_funcional">
+        <th mat-header-cell *matHeaderCellDef> ID Funcional </th>
+        <td mat-cell *matCellDef="let element"> {{element.id_funcional}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="cpf">
+        <th mat-header-cell *matHeaderCellDef> CPF </th>
+        <td mat-cell *matCellDef="let element">
+            {{element.cpf}}
+        </td>
+    </ng-container>
+
+    <ng-container matColumnDef="orgao">
+        <th mat-header-cell *matHeaderCellDef> Órgao </th>
+        <td mat-cell *matCellDef="let element">
+            {{element.orgao}}
+        </td>
+    </ng-container>
+
+    <ng-container matColumnDef="valor_descontado">
+        <th mat-header-cell *matHeaderCellDef> Valor descontado </th>
+        <td mat-cell *matCellDef="let element">
+            {{element.valor_descontado}}
+        </td>
+    </ng-container>
+
+    <ng-container matColumnDef="situacao">
+        <th mat-header-cell *matHeaderCellDef> Situação </th>
+        <td mat-cell *matCellDef="let element">
+            {{element.situacao}}
+        </td>
+    </ng-container>
+
+
+
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns">
+    </tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+</table>

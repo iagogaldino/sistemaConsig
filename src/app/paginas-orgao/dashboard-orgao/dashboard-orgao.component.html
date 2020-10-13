@@ -28,8 +28,8 @@
                 <mat-icon>check</mat-icon> Reservas
             </a>
 
-            <a mat-list-item>
-                <mat-icon>public</mat-icon> Ordem judicial
+            <a mat-list-item [routerLink]="'/dashboard-orgao/ordem-judicial'">
+                <mat-icon>check</mat-icon> Ordem judicial
             </a>
 
 
@@ -40,57 +40,54 @@
         Relatórios
       </a>
 
-            <a mat-list-item>
-                <mat-icon>public</mat-icon>Desconto em folha
+            <a mat-list-item [routerLink]="'/dashboard-orgao/desconto-folha'">
+                <mat-icon>check</mat-icon>Desconto em folha
             </a>
-            <a mat-list-item>
-        Movimentações
-      </a>
-            <a mat-list-item>
-                <mat-icon>public</mat-icon> Repasse
+            <a mat-list-item [routerLink]="'/dashboard-orgao/movimentacoes'">
+                <mat-icon>check</mat-icon> Movimentações
             </a>
-            <a mat-list-item>
-                <mat-icon>public</mat-icon> Auditoria
+            <a mat-list-item [routerLink]="'/dashboard-orgao/repasse'">
+                <mat-icon>check</mat-icon> Repasse
             </a>
-
-            <a mat-list-item>
-                <mat-icon>public</mat-icon> Carteira
+            <a mat-list-item [routerLink]="'/dashboard-orgao/auditoria'">
+                <mat-icon>check</mat-icon> Auditoria
             </a>
 
-            <a mat-list-item>
-                <mat-icon>public</mat-icon> Margem
+            <a mat-list-item [routerLink]="'/dashboard-orgao/carteira'">
+                <mat-icon>check</mat-icon> Carteira
             </a>
 
-            <a mat-list-item>
-                <mat-icon>public</mat-icon> Market share
+            <a mat-list-item [routerLink]="'/dashboard-orgao/margem'">
+                <mat-icon>check</mat-icon> Margem
             </a>
 
-            <a mat-list-item>
-                <mat-icon>public</mat-icon> Consignatárias
+            <a mat-list-item [routerLink]="'/dashboard-orgao/marketshare'">
+                <mat-icon>check</mat-icon> Market share
             </a>
 
-            <a mat-list-item>
-        Manutenção
-      </a>
 
-            <a mat-list-item>
-                <mat-icon>public</mat-icon> Consignatárias
+            <a mat-list-item [routerLink]="'/dashboard-orgao/consignatarias'">
+                <mat-icon>check</mat-icon> Consignatárias
             </a>
 
-            <a mat-list-item>
-                <mat-icon>public</mat-icon> Servidores/Funcionários
+            <a mat-list-item [routerLink]="'/dashboard-orgao/manutencao-consignatarias'">
+                <mat-icon>check</mat-icon> Manutenção Consignatária
             </a>
 
-            <a mat-list-item>
-                <mat-icon>public</mat-icon> Produtos
+            <a mat-list-item [routerLink]="'/dashboard-orgao/servidores'">
+                <mat-icon>check</mat-icon> Servidores/Funcionários
             </a>
 
-            <a mat-list-item>
-                <mat-icon>public</mat-icon> Postos de atendimento
+            <a mat-list-item [routerLink]="'/dashboard-orgao/produtos'">
+                <mat-icon>check</mat-icon> Produtos
             </a>
 
-            <a mat-list-item>
-                <mat-icon>public</mat-icon> Repositórios de arquivos
+            <a mat-list-item [routerLink]="'/dashboard-orgao/postos-atendimento'">
+                <mat-icon>check</mat-icon> Postos de atendimento
+            </a>
+
+            <a mat-list-item [routerLink]="'/dashboard-orgao/repositorio-arquivos'">
+                <mat-icon>check</mat-icon> Repositórios de arquivos
             </a>
 
         </mat-nav-list>

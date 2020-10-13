@@ -1,6 +1,12 @@
 <div class="inicial">
 
-    <div class="baixo">
+    <div>
+        <mat-toolbar>
+            <span>Dados pessoais</span>
+        </mat-toolbar>
+    </div>
+
+    <div class="pessoais">
         <mat-form-field class="example-full-width">
             <mat-label>CPF:</mat-label>
             <input matInput>
@@ -30,68 +36,72 @@
     </div>
 
     <div>
-        <div> Dados pessoais </div>
+        <div>
+            <mat-toolbar>
+                <span>Dados Instituição</span>
+            </mat-toolbar>
+        </div>
+        <div class="instituicao">
+            <mat-form-field appearance="fill">
+                <mat-label>Instituição</mat-label>
+                <mat-select>
+                    <mat-option>
+                        Caixa de seleção
+                    </mat-option>
+                </mat-select>
+            </mat-form-field>
 
-        <mat-form-field appearance="fill">
-            <mat-label>Instituição</mat-label>
-            <mat-select>
-                <mat-option>
-                    Caixa de seleção
-                </mat-option>
-            </mat-select>
-        </mat-form-field>
+            <mat-form-field appearance="fill">
+                <mat-label>Função</mat-label>
+                <mat-select>
+                    <mat-option>
+                        Caixa de seleção
+                    </mat-option>
+                </mat-select>
+            </mat-form-field>
 
-        <mat-form-field appearance="fill">
-            <mat-label>Função</mat-label>
-            <mat-select>
-                <mat-option>
-                    Caixa de seleção
-                </mat-option>
-            </mat-select>
-        </mat-form-field>
+            <mat-form-field appearance="fill">
+                <mat-label>Setor</mat-label>
+                <mat-select>
+                    <mat-option>
+                        Setor
+                    </mat-option>
+                </mat-select>
+            </mat-form-field>
 
-        <mat-form-field appearance="fill">
-            <mat-label>Instituição</mat-label>
-            <mat-select>
-                <mat-option>
-                    Setor
-                </mat-option>
-            </mat-select>
-        </mat-form-field>
+            <mat-form-field class="example-full-width">
+                <mat-label>Agência</mat-label>
+                <input matInput>
+            </mat-form-field>
 
-        <mat-form-field class="example-full-width">
-            <mat-label>Agência</mat-label>
-            <input matInput>
-        </mat-form-field>
+            <mat-form-field class="example-full-width">
+                <mat-label>Cep</mat-label>
+                <input matInput>
+            </mat-form-field>
 
-        <mat-form-field class="example-full-width">
-            <mat-label>Cep</mat-label>
-            <input matInput>
-        </mat-form-field>
+            <mat-form-field class="example-full-width">
+                <mat-label>Endereço</mat-label>
+                <input matInput>
+            </mat-form-field>
 
-        <mat-form-field class="example-full-width">
-            <mat-label>Endereço</mat-label>
-            <input matInput>
-        </mat-form-field>
+            <mat-form-field class="example-full-width">
+                <mat-label>Cidade</mat-label>
+                <input matInput>
+            </mat-form-field>
 
-        <mat-form-field class="example-full-width">
-            <mat-label>Cidade</mat-label>
-            <input matInput>
-        </mat-form-field>
+            <mat-form-field class="example-full-width">
+                <mat-label>UF</mat-label>
+                <input matInput>
+            </mat-form-field>
 
-        <mat-form-field class="example-full-width">
-            <mat-label>UF</mat-label>
-            <input matInput>
-        </mat-form-field>
-
-        <mat-form-field class="example-full-width">
-            <mat-label>Telefone</mat-label>
-            <input matInput>
-        </mat-form-field>
-
+            <mat-form-field class="example-full-width">
+                <mat-label>Telefone</mat-label>
+                <input matInput>
+            </mat-form-field>
+        </div>
     </div>
 
-    <div>
+    <div style="text-align: center;">
         <button mat-stroked-button color="primary">Atualizar cadastro</button>
     </div>
 

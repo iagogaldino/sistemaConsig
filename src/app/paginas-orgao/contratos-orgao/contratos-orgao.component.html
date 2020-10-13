@@ -1,0 +1,161 @@
+<mat-toolbar>
+    <span> Contratos </span>
+</mat-toolbar>
+
+<div style="padding-left: 10px;">
+
+    <app-caixa-dados></app-caixa-dados>
+
+</div>
+
+<mat-toolbar>
+    <span> Contratos originais </span>
+</mat-toolbar>
+
+<table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+
+    <ng-container matColumnDef="checkbox">
+        <th mat-header-cell *matHeaderCellDef> Selecionar </th>
+        <td mat-cell *matCellDef="let element">
+
+            <mat-checkbox></mat-checkbox>
+
+
+        </td>
+    </ng-container>
+
+    <ng-container matColumnDef="n_contrato">
+        <th mat-header-cell *matHeaderCellDef> Número do contrato </th>
+        <td mat-cell *matCellDef="let element"> {{element.n_contrato}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="consignataria">
+        <th mat-header-cell *matHeaderCellDef> Consignatária </th>
+        <td mat-cell *matCellDef="let element"> {{element.consignataria}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="dt_inicio">
+        <th mat-header-cell *matHeaderCellDef> ID Funcional </th>
+        <td mat-cell *matCellDef="let element"> {{element.dt_inicio}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="valor_parcela">
+        <th mat-header-cell *matHeaderCellDef> Valor da parcela </th>
+        <td mat-cell *matCellDef="let element"> {{element.dt_inicio}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="prazo">
+        <th mat-header-cell *matHeaderCellDef> Prazo </th>
+        <td mat-cell *matCellDef="let element">
+            {{element.prazo}}
+        </td>
+    </ng-container>
+
+    <ng-container matColumnDef="parcelas_pagas">
+        <th mat-header-cell *matHeaderCellDef> Parcelas pagas </th>
+        <td mat-cell *matCellDef="let element">
+            {{element.parcelas_pagas}}
+        </td>
+    </ng-container>
+
+    <ng-container matColumnDef="situacao">
+        <th mat-header-cell *matHeaderCellDef> Situação </th>
+        <td mat-cell *matCellDef="let element">
+            {{element.situacao}}
+        </td>
+    </ng-container>
+
+
+
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns">
+    </tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+</table>
+
+
+<mat-toolbar>
+    <span> Adequações </span>
+</mat-toolbar>
+
+<table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+
+    <ng-container matColumnDef="checkbox">
+        <th mat-header-cell *matHeaderCellDef> Selecionar </th>
+        <td mat-cell *matCellDef="let element">
+
+            <mat-checkbox></mat-checkbox>
+
+
+        </td>
+    </ng-container>
+
+    <ng-container matColumnDef="n_contrato">
+        <th mat-header-cell *matHeaderCellDef> Número do contrato </th>
+        <td mat-cell *matCellDef="let element"> {{element.n_contrato}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="consignataria">
+        <th mat-header-cell *matHeaderCellDef> Consignatária </th>
+        <td mat-cell *matCellDef="let element"> {{element.consignataria}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="dt_inicio">
+        <th mat-header-cell *matHeaderCellDef> ID Funcional </th>
+        <td mat-cell *matCellDef="let element"> {{element.dt_inicio}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="valor_parcela">
+        <th mat-header-cell *matHeaderCellDef> Valor da parcela </th>
+        <td mat-cell *matCellDef="let element"> {{element.dt_inicio}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="prazo">
+        <th mat-header-cell *matHeaderCellDef> Prazo </th>
+        <td mat-cell *matCellDef="let element">
+            {{element.prazo}}
+        </td>
+    </ng-container>
+
+    <ng-container matColumnDef="parcelas_pagas">
+        <th mat-header-cell *matHeaderCellDef> Parcelas pagas </th>
+        <td mat-cell *matCellDef="let element">
+            {{element.parcelas_pagas}}
+        </td>
+    </ng-container>
+
+    <ng-container matColumnDef="situacao">
+        <th mat-header-cell *matHeaderCellDef> Situação </th>
+        <td mat-cell *matCellDef="let element">
+            {{element.situacao}}
+        </td>
+    </ng-container>
+
+
+
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns">
+    </tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+</table>
+
+<div style="margin-top: 30px;">
+    <mat-form-field>
+        <mat-label> Número do processo </mat-label>
+        <input matInput>
+    </mat-form-field>
+</div>
+
+
+<div>
+    <mat-form-field>
+        <mat-label> Observação </mat-label>
+        <textarea matInput placeholder="Digite aqui a observação"></textarea>
+    </mat-form-field>
+</div>
+
+<div>
+    <button mat-raised-button color="primary" (click)="digitalizarOrdemJud()"> Adequar </button>
+</div>

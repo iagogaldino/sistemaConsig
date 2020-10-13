@@ -1,3 +1,16 @@
+import { RepositorioArquivosOrgaoComponent } from './paginas-orgao/repositorio-arquivos-orgao/repositorio-arquivos-orgao.component';
+import { PostosAtendimentoOrgaoComponent } from './paginas-orgao/postos-atendimento-orgao/postos-atendimento-orgao.component';
+import { ProdutosOrgaoComponent } from './paginas-orgao/produtos-orgao/produtos-orgao.component';
+import { ConsignatariasOrgaoComponent } from './paginas-orgao/consignatarias-orgao/consignatarias-orgao.component';
+import { MarktshareOrgaoComponent } from './paginas-orgao/marktshare-orgao/marktshare-orgao.component';
+import { MargemOrgaoComponent } from './paginas-orgao/margem-orgao/margem-orgao.component';
+import { AuditoriaOrgaoComponent } from './paginas-orgao/auditoria-orgao/auditoria-orgao.component';
+import { MovimentacoesOrgaoComponent } from './paginas-orgao/movimentacoes-orgao/movimentacoes-orgao.component';
+import { DescontoFolhaOrgaoComponent } from './paginas-orgao/desconto-folha-orgao/desconto-folha-orgao.component';
+import { ContratosOrgaoComponent } from './paginas-orgao/contratos-orgao/contratos-orgao.component';
+import { AdicionarOrdemJudicialOrgaoComponent } from './paginas-orgao/adicionar-ordem-judicial-orgao/adicionar-ordem-judicial-orgao.component';
+import { OrdemJudicialOrgaoComponent } from './paginas-orgao/ordem-judicial-orgao/ordem-judicial-orgao.component';
+import { OrdemJudicialComponent } from './paginas-instituicao/dashboard-instituicao/ordem-judicial/ordem-judicial.component';
 import { ReservasOrgaoComponent } from './paginas-orgao/reservas-orgao/reservas-orgao.component';
 import { RealocarMargemOrgaoComponent } from './paginas-orgao/realocar-margem-orgao/realocar-margem-orgao.component';
 import { MeuPerfilGestaoComponent } from './paginas-orgao/meu-perfil-gestao/meu-perfil-gestao.component';
@@ -46,6 +59,13 @@ import { DetalhamentoContratoOrgaoComponent } from './paginas-orgao/detalhamento
 import { RepasseInstituicaoComponent } from './paginas-instituicao/dashboard-instituicao/repasse-instituicao/repasse-instituicao.component';
 import { AuditoriaInstituicaoComponent } from './paginas-instituicao/dashboard-instituicao/auditoria-instituicao/auditoria-instituicao.component';
 import { PortabilidadeOrgaoComponent } from './paginas-orgao/portabilidade-orgao/portabilidade-orgao.component';
+import { DetalhesReservaOrgaoComponent } from './paginas-orgao/detalhes-reserva-orgao/detalhes-reserva-orgao.component';
+import { ManutencaoInstituicaoComponent } from './paginas-instituicao/dashboard-instituicao/manutencao-instituicao/manutencao-instituicao.component';
+import { CarteiraOrgaoComponent } from './paginas-orgao/carteira-orgao/carteira-orgao.component';
+import { ConsignatariasManutencaoOrgaoComponent } from './paginas-orgao/consignatarias-manutencao-orgao/consignatarias-manutencao-orgao.component';
+import { ServidoresOrgaoComponent } from './paginas-orgao/servidores-orgao/servidores-orgao.component';
+import { DadosServidorOrgaoComponent } from './paginas-orgao/dados-servidor-orgao/dados-servidor-orgao.component';
+
 
 
 
@@ -99,6 +119,7 @@ const routes: Routes = [
     { path: 'movimentacoes-instituicao', component: MovimentacoesInstituicaoComponent },
     { path: 'repasse-instituicao', component: RepasseInstituicaoComponent },
     { path: 'auditoria-instituicao', component: AuditoriaInstituicaoComponent },
+    { path: 'manutencao-instituicao', component: ManutencaoInstituicaoComponent },
   ] },
   /* Rotas instituição */
 
@@ -118,6 +139,24 @@ const routes: Routes = [
     { path: 'detalhamento-contrato', component: DetalhamentoContratoOrgaoComponent },
     { path: 'realocar-margem', component: RealocarMargemOrgaoComponent },
     { path: 'reservas', component: ReservasOrgaoComponent },
+    { path: 'detalhes-reserva', component: DetalhesReservaOrgaoComponent},
+    { path: 'ordem-judicial', component: OrdemJudicialOrgaoComponent},
+    { path: 'adicionar-ordem-judicial', component: AdicionarOrdemJudicialOrgaoComponent},
+    { path: 'contratos', component: ContratosOrgaoComponent},
+    { path: 'desconto-folha', component: DescontoFolhaOrgaoComponent},
+    { path: 'movimentacoes', component: MovimentacoesOrgaoComponent},
+    { path: 'repasse', component: RepasseInstituicaoComponent},
+    { path: 'auditoria', component: AuditoriaOrgaoComponent },
+    { path: 'carteira', component: CarteiraOrgaoComponent },
+    { path: 'margem', component: MargemOrgaoComponent },
+    { path: 'marketshare', component: MarktshareOrgaoComponent },
+    { path: 'consignatarias', component: ConsignatariasOrgaoComponent },
+    { path: 'manutencao-consignatarias', component: ConsignatariasManutencaoOrgaoComponent },
+    { path: 'servidores', component: ServidoresOrgaoComponent },
+    { path: 'dados-servidor', component: DadosServidorOrgaoComponent },
+    { path: 'produtos', component: ProdutosOrgaoComponent },
+    { path: 'postos-atendimento', component: PostosAtendimentoOrgaoComponent },
+    { path: 'repositorio-arquivos', component: RepositorioArquivosOrgaoComponent },
   ] },
   /* Rotas Orgao */
 

@@ -1,0 +1,15 @@
+<h2> Detalhes produto </h2>
+
+<div style="height: 450px; overflow: auto;">
+    <div class="eha">
+        <div> Consignatária </div>
+        <div> Juros </div>
+        <div> Prazo </div>
+    </div>
+
+    <div class="row" *ngFor="let item of row">
+        <div> {{ item.nome }} </div>
+        <div> {{ item.juros }} </div>
+        <div> {{ item.prazo }} </div>
+    </div>
+</div>

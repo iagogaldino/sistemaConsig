@@ -80,6 +80,32 @@ import { AuditoriaInstituicaoComponent } from './paginas-instituicao/dashboard-i
 import { PortabilidadeOrgaoComponent } from './paginas-orgao/portabilidade-orgao/portabilidade-orgao.component';
 import { ReservasOrgaoComponent } from './paginas-orgao/reservas-orgao/reservas-orgao.component';
 import { DetalhesReservaOrgaoComponent } from './paginas-orgao/detalhes-reserva-orgao/detalhes-reserva-orgao.component';
+import { OrdemJudicialOrgaoComponent } from './paginas-orgao/ordem-judicial-orgao/ordem-judicial-orgao.component';
+import { AdicionarOrdemJudicialOrgaoComponent } from './paginas-orgao/adicionar-ordem-judicial-orgao/adicionar-ordem-judicial-orgao.component';
+import { ContratosOrgaoComponent } from './paginas-orgao/contratos-orgao/contratos-orgao.component';
+import { DigitalizarOrdemJudOrgaoComponent } from './paginas-orgao/digitalizar-ordem-jud-orgao/digitalizar-ordem-jud-orgao.component';
+import { DescontoFolhaOrgaoComponent } from './paginas-orgao/desconto-folha-orgao/desconto-folha-orgao.component';
+import { MovimentacoesOrgaoComponent } from './paginas-orgao/movimentacoes-orgao/movimentacoes-orgao.component';
+import { RepasseOrgaoComponent } from './paginas-orgao/repasse-orgao/repasse-orgao.component';
+import { AuditoriaOrgaoComponent } from './paginas-orgao/auditoria-orgao/auditoria-orgao.component';
+import { ManutencaoInstituicaoComponent } from './paginas-instituicao/dashboard-instituicao/manutencao-instituicao/manutencao-instituicao.component';
+import { CarteiraOrgaoComponent } from './paginas-orgao/carteira-orgao/carteira-orgao.component';
+import { MargemOrgaoComponent } from './paginas-orgao/margem-orgao/margem-orgao.component';
+import { VisualizacaoManutencaoInstituicaoComponent } from './paginas-instituicao/dashboard-instituicao/visualizacao-manutencao-instituicao/visualizacao-manutencao-instituicao.component';
+import { MarktshareOrgaoComponent } from './paginas-orgao/marktshare-orgao/marktshare-orgao.component';
+import { ConsignatariasOrgaoComponent } from './paginas-orgao/consignatarias-orgao/consignatarias-orgao.component';
+import { ManutencaoOrgaoComponent } from './paginas-orgao/manutencao-orgao/manutencao-orgao.component';
+import { ConsignatariasManutencaoOrgaoComponent } from './paginas-orgao/consignatarias-manutencao-orgao/consignatarias-manutencao-orgao.component';
+import { CadastroConssignatariaOrgaoComponent } from './paginas-orgao/cadastro-conssignataria-orgao/cadastro-conssignataria-orgao.component';
+import { ServidoresOrgaoComponent } from './paginas-orgao/servidores-orgao/servidores-orgao.component';
+import { DadosServidorOrgaoComponent } from './paginas-orgao/dados-servidor-orgao/dados-servidor-orgao.component';
+import { ProdutosOrgaoComponent } from './paginas-orgao/produtos-orgao/produtos-orgao.component';
+import { ManutencaoInstituicaoNovoPerfilComponent } from './paginas-instituicao/dashboard-instituicao/manutencao-instituicao-novo-perfil/manutencao-instituicao-novo-perfil.component';
+import { ProdutoNovoCadastroOrgaoComponent } from './paginas-orgao/produto-novo-cadastro-orgao/produto-novo-cadastro-orgao.component';
+import { ProdutoDetalhesOrgaoComponent } from './paginas-orgao/produto-detalhes-orgao/produto-detalhes-orgao.component';
+import { PostosAtendimentoOrgaoComponent } from './paginas-orgao/postos-atendimento-orgao/postos-atendimento-orgao.component';
+import { PostoAtendimentoFormComponent } from './paginas-orgao/posto-atendimento-form/posto-atendimento-form.component';
+import { RepositorioArquivosOrgaoComponent } from './paginas-orgao/repositorio-arquivos-orgao/repositorio-arquivos-orgao.component';
 
 @NgModule({
   declarations: [
@@ -145,6 +171,32 @@ import { DetalhesReservaOrgaoComponent } from './paginas-orgao/detalhes-reserva-
     PortabilidadeOrgaoComponent,
     ReservasOrgaoComponent,
     DetalhesReservaOrgaoComponent,
+    OrdemJudicialOrgaoComponent,
+    AdicionarOrdemJudicialOrgaoComponent,
+    ContratosOrgaoComponent,
+    DigitalizarOrdemJudOrgaoComponent,
+    DescontoFolhaOrgaoComponent,
+    MovimentacoesOrgaoComponent,
+    RepasseOrgaoComponent,
+    AuditoriaOrgaoComponent,
+    ManutencaoInstituicaoComponent,
+    CarteiraOrgaoComponent,
+    MargemOrgaoComponent,
+    VisualizacaoManutencaoInstituicaoComponent,
+    MarktshareOrgaoComponent,
+    ConsignatariasOrgaoComponent,
+    ManutencaoOrgaoComponent,
+    ConsignatariasManutencaoOrgaoComponent,
+    CadastroConssignatariaOrgaoComponent,
+    ServidoresOrgaoComponent,
+    DadosServidorOrgaoComponent,
+    ProdutosOrgaoComponent,
+    ManutencaoInstituicaoNovoPerfilComponent,
+    ProdutoNovoCadastroOrgaoComponent,
+    ProdutoDetalhesOrgaoComponent,
+    PostosAtendimentoOrgaoComponent,
+    PostoAtendimentoFormComponent,
+    RepositorioArquivosOrgaoComponent,
   ],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA ],
   imports: [
